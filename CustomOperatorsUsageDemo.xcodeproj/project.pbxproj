@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		C7F09BCB2512280900C770F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F09BC92512280900C770F3 /* Main.storyboard */; };
 		C7F09BCD2512280A00C770F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F09BCC2512280A00C770F3 /* Assets.xcassets */; };
 		C7F09BD02512280A00C770F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F09BCE2512280A00C770F3 /* LaunchScreen.storyboard */; };
+		C7F09BD82512282F00C770F3 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F09BD72512282F00C770F3 /* Employee.swift */; };
+		C7F09BDB2512286500C770F3 /* CustomOperators in Frameworks */ = {isa = PBXBuildFile; productRef = C7F09BDA2512286500C770F3 /* CustomOperators */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		C7F09BCC2512280A00C770F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7F09BCF2512280A00C770F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7F09BD12512280A00C770F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7F09BD72512282F00C770F3 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F09BDB2512286500C770F3 /* CustomOperators in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +62,7 @@
 			children = (
 				C7F09BC32512280900C770F3 /* AppDelegate.swift */,
 				C7F09BC52512280900C770F3 /* SceneDelegate.swift */,
+				C7F09BD72512282F00C770F3 /* Employee.swift */,
 				C7F09BC72512280900C770F3 /* ViewController.swift */,
 				C7F09BC92512280900C770F3 /* Main.storyboard */,
 				C7F09BCC2512280A00C770F3 /* Assets.xcassets */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = CustomOperatorsUsageDemo;
+			packageProductDependencies = (
+				C7F09BDA2512286500C770F3 /* CustomOperators */,
+			);
 			productName = CustomOperatorsUsageDemo;
 			productReference = C7F09BC02512280900C770F3 /* CustomOperatorsUsageDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = C7F09BB72512280900C770F3;
+			packageReferences = (
+				C7F09BD92512286500C770F3 /* XCRemoteSwiftPackageReference "CustomOperators" */,
+			);
 			productRefGroup = C7F09BC12512280900C770F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F09BC82512280900C770F3 /* ViewController.swift in Sources */,
+				C7F09BD82512282F00C770F3 /* Employee.swift in Sources */,
 				C7F09BC42512280900C770F3 /* AppDelegate.swift in Sources */,
 				C7F09BC62512280900C770F3 /* SceneDelegate.swift in Sources */,
 			);
@@ -336,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7F09BD92512286500C770F3 /* XCRemoteSwiftPackageReference "CustomOperators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AmaranthineTech/CustomOperators.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7F09BDA2512286500C770F3 /* CustomOperators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7F09BD92512286500C770F3 /* XCRemoteSwiftPackageReference "CustomOperators" */;
+			productName = CustomOperators;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7F09BB82512280900C770F3 /* Project object */;
 }

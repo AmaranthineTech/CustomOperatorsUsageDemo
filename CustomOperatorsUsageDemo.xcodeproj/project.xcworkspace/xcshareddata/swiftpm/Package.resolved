@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CustomOperators",
+        "repositoryURL": "https://github.com/AmaranthineTech/CustomOperators.git",
+        "state": {
+          "branch": "master",
+          "revision": "0ba1d9f8ba3675cf49221a1102f04c03080578be",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
